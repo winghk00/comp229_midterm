@@ -1,0 +1,13 @@
+.head3{
+  color: CornflowerBlue;
+  text-align: center;
+}
+.button_s{
+  background-color: SlateGray;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.td_r{
+  text-align: right
+}
