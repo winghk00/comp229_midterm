@@ -84,34 +84,40 @@ export default function Validate() {
     <form onSubmit={handleSubmit}>
       <h3 className="head3">New Product</h3>
       <label>
-        <p>Name:</p>
-        <input type="text" value={nameValue} onChange={handleNameChange}  />
+        <p className="text-color">Name:</p>
+        <input className="text-line" type="text" value={nameValue} onChange={handleNameChange}  />
       </label>
       <label>
-        <p>Description:</p>
-        <input type="text" value={descValue} onChange={handleDescChange}/>
+        <p className="text-color">Description:</p>
+        <input className="text-line" type="text" value={descValue} onChange={handleDescChange}/>
       </label>
       <label>
-        <p>Category:</p>
-        <input type="text" value={cateValue} onChange={handleCateChange}/>
+        <p className="text-color">Category:</p>
+        <input className="text-line" type="text" value={cateValue} onChange={handleCateChange}/>
       </label>
       <label>
-        <p>Quantity:</p>
-        <input type="text" value={quanValue} onChange={handleQuanChange} />
+        <p className="text-color">Quantity:</p>
+        <input className="text-line" type="text" value={quanValue} onChange={handleQuanChange} />
       </label>
       <label>
-        <p>Price:</p>
-        <input type="text" value={priceValue} onChange={handlePriceChange} />
+        <p className="text-color">Price:</p>
+        <input className="text-line" type="text" value={priceValue} onChange={handlePriceChange} />
       </label>
       {inputError && <div style={{ color: "red" }}>{inputError}</div>}
       <br></br>
-      <button type="submit">SUBMIT</button>
+      <table>
+      <td>
+      <button className="button_s" type="submit">SUBMIT</button>
+      </td>
+      <td>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <button type="button">
         CANCEL
       </button>
+      </td>
+      </table>
     </form>
   );
 }

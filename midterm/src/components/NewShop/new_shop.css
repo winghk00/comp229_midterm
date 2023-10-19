@@ -4,10 +4,26 @@
 }
 .button_s{
   background-color: SlateGray;
+  color:white;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 .td_r{
   text-align: right
+}
+.text-line {
+  background-color: transparent;
+  color: #767272;
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #767272 1px;
+  padding: 3px 10px;
+}
+.text-color {
+  color: #767272;
+  padding: 2px 0px;
 }

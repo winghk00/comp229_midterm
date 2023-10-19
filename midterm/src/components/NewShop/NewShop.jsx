@@ -27,12 +27,12 @@ const MyForm = () => {
     <form onSubmit={handleSubmit}>
       <h3 className="head3">New Shop</h3>
       <br/>
-        <p htmlFor="name">Name:</p>
-        <input type="text" id="name" value={name} onChange={handleNameChange} />
+        <p className="text-color" htmlFor="name">Name:</p>
+        <input className="text-line" type="text" id="name" value={name} onChange={handleNameChange} />
       <p></p>
       <br/>
-        <p htmlFor="description">Description:</p>
-        <input type="text" id="description" value={description} onChange={handleDescriptionChange} />
+        <p className="text-color" htmlFor="description">Description:</p>
+        <input className="text-line" type="text" id="description" value={description} onChange={handleDescriptionChange} />
       <br/>
       <p></p>
       <table>
